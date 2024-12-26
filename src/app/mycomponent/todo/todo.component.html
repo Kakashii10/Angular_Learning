@@ -1,0 +1,12 @@
+<p>todo works!</p>
+<div>
+    <h1> To Application</h1>
+    <input type="text" [(ngModel)]="newTodo" placeholder="task" >
+    <button (click)="addTodo()">Add</button>
+    <ul class="todo-list">
+        <li *ngFor="let todo of todos; let i = index">
+          <span>{{ todo|uppercase }}</span>
+          <button (click)="deleteTodo(i)">Delete</button>
+        </li>
+      </ul>
+</div>
