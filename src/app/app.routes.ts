@@ -3,11 +3,13 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './mycomponent/home/home.component';
 import { DataBindingComponent } from './mycomponent/data-binding/data-binding.component';
 import { PageNotFoundComponent } from './mycomponent/page-not-found/page-not-found.component';
+import { NgForComponent } from './mycomponent/ng-for/ng-for.component';
 
 export const routes: Routes = [
 
     {path:'', redirectTo:'home', pathMatch:'full'},
     {path:'home',component:HomeComponent },
     {path:'data-binding',component:DataBindingComponent },
+    {path:'ngFor',component:NgForComponent },
     {path:'**',component:PageNotFoundComponent }
 ];

@@ -1,1 +1,18 @@
 <p>data-binding works!</p>
+
+<h1>Interpolation</h1>
+<h2>hello {{name}}</h2>
+
+property binding
+<div>
+    <span [innerHTML] = 'Title' ></span>   
+</div>
+
+Two way binding
+<div>
+    <input type="text" [(ngModel)] = "data">
+    <br>
+    <h3>{{data}}</h3>
+</div>
+
+<button (click)="onBtnClick($event)">Alert</button>

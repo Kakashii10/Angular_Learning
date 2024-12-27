@@ -13,8 +13,5 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   
-  onBtnClick(e :any){
-    console.log(e)
-    alert("ok")
-  }
+ 
 }
