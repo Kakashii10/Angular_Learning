@@ -1,0 +1,31 @@
+<p>ngif works!</p>
+
+<!-- <div *ngIf="isVaild"> -->
+
+<div> 
+    <input type="radio" name="rb" (click)= "ChangeData(true)" checked > Valid
+    <input type="radio" name="rb" (click)= "ChangeData(false)"> Invalid
+</div>
+
+<div *ngIf="isVaild then thenblock else elseblock"> dsf</div>
+  <ng-template #thenblock>
+    <div>
+    <b>The is Then Block</b>
+   </div>  
+  </ng-template>
+ 
+  <ng-template #elseblock>
+    <div >
+        <b>The is Else Block</b>
+     </div> 
+  </ng-template>
+
+
+
+  <!-- Angular 18 -->
+    @if(isVaild){
+        <h1>hello World true</h1>
+
+    }@else {
+        <h1>hello World false</h1>
+    }
