@@ -5,6 +5,7 @@ import { DataBindingComponent } from './mycomponent/data-binding/data-binding.co
 import { PageNotFoundComponent } from './mycomponent/page-not-found/page-not-found.component';
 import { NgForComponent } from './mycomponent/ng-for/ng-for.component';
 import { NgifComponent } from './mycomponent/ngif/ngif.component';
+import { PipesComponent } from './mycomponent/pipes/pipes.component';
 
 export const routes: Routes = [
 
@@ -13,5 +14,6 @@ export const routes: Routes = [
     {path:'data-binding',component:DataBindingComponent },
     {path:'ngFor',component:NgForComponent },
     {path:'ngIf',component:NgifComponent },
+    {path:'pipes',component:PipesComponent },
     {path:'**',component:PageNotFoundComponent }
 ];
