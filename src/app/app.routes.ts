@@ -6,6 +6,7 @@ import { PageNotFoundComponent } from './mycomponent/page-not-found/page-not-fou
 import { NgForComponent } from './mycomponent/ng-for/ng-for.component';
 import { NgifComponent } from './mycomponent/ngif/ngif.component';
 import { PipesComponent } from './mycomponent/pipes/pipes.component';
+import { ParentComponent } from './mycomponent/parent/parent.component';
 
 export const routes: Routes = [
 
@@ -15,5 +16,6 @@ export const routes: Routes = [
     {path:'ngFor',component:NgForComponent },
     {path:'ngIf',component:NgifComponent },
     {path:'pipes',component:PipesComponent },
+    {path:'parent',component:ParentComponent },
     {path:'**',component:PageNotFoundComponent }
 ];

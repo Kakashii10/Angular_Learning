@@ -1,1 +1,18 @@
 <p>parent works!</p>
+
+<div>
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Parent Component</h5>
+            <input [(ngModel)]="name" placeholder="Name" />
+            <input [(ngModel)]="marks" placeholder="Marks" />
+            <p>{{name}} {{marks}}</p>
+            <!-- <a (click)="addData(name,marks)" class="btn btn-primary">Add Data</a>  -->
+            <a (click)="pushDataToChild()" class="btn btn-primary">Push</a>
+            <h2> {{response}}</h2>
+        </div>
+        <!-- <app-child [pDataList]="dataList"></app-child> -->
+        <app-child></app-child>
+    </div>
+</div>
